@@ -12,7 +12,7 @@ echo "<br>"; //inserisco un br
 echo "La lunghezza del paragrafo è: " . strlen($text); //stampo la lunghezza del paragrafo
 echo "<br>"; //inserisco un br
 
-$censured_word = "gelato"; //scelgo una parola da rimpiazzare
+$censured_word = $_GET['word']; //scelgo una parola da rimpiazzare
 $replaced_text = str_replace($censured_word, "***", $text); //rimpiazzo la parola selezionata con gli asterischi
 
 echo $replaced_text; //stampo il testo modificato
