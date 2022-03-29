@@ -9,3 +9,12 @@ $text = "Io abito a New York, e pensavo al laghetto di Central Park, vicino a Ce
 echo $text;
 echo "<br>";
 echo "La lunghezza del paragrafo è: " . strlen($text);
+echo "<br>";
+
+$censured_word = "gelato";
+$replaced_text = str_replace($censured_word, "***", $text);
+
+echo $replaced_text;
+echo "<br>";
+echo "La lunghezza del paragrafo con la parola rimpiazzata è: " . strlen($replaced_text);
+echo "<br>";
